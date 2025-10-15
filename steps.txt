@@ -1,0 +1,208 @@
+🏃 RUNNING THE APPLICATION
+Method 1: Manual Run (Recommended for Development)
+Terminal 1 - Start Backend:
+Bash
+
+# Open new terminal/command prompt
+cd ml-research-agent-platform
+cd backend
+
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+
+# Mac/Linux:
+source venv/bin/activate
+
+# Start backend server
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# You should see:
+# INFO:     Uvicorn running on http://0.0.0.0:8000
+# INFO:     Application startup complete.
+Terminal 2 - Start Frontend:
+Bash
+
+# Open another new terminal/command prompt
+cd ml-research-agent-platform
+cd frontend
+
+# Start frontend development server
+npm run dev
+
+# You should see:
+# ready - started server on 0.0.0.0:3000
+# info  - Loaded env from .env
+Method 2: Using Docker (Full Stack)
+Bash
+
+cd ml-research-agent-platform
+
+# Build and run all services
+docker-compose up --build
+
+# Or run in background
+docker-compose up -d --build
+
+# To stop
+docker-compose down
+✅ VERIFICATION STEPS
+Step 1: Check Backend
+Open browser
+Go to: http://localhost:8000
+You should see: {"message": "ML Research Agent Platform API", "status": "active"}
+Go to: http://localhost:8000/docs
+You should see the Swagger API documentation
+Step 2: Check Frontend
+Open browser
+Go to: http://localhost:3000
+You should see the ML Research Agent Platform homepage
+The interface should load with tabs: Dashboard, Agent Testing, Experiments, Metrics
+Step 3: Test Basic Functionality
+Click on "Agent Testing" tab
+You should see dropdowns for agents and tasks
+If dropdowns are populated, the connection is working
+🔧 TROUBLESHOOTING
+Issue 1: "Module not found" errors
+Bash
+
+# Backend fix:
+cd backend
+venv\Scripts\activate  # or source venv/bin/activate
+pip install --upgrade -r requirements.txt
+
+# Frontend fix:
+cd frontend
+rm -rf node_modules package-lock.json
+npm install
+Issue 2: "Port already in use"
+Bash
+
+# Windows - Kill process on port 8000:
+netstat -ano | findstr :8000
+taskkill /PID [PID_NUMBER] /F
+
+# Windows - Kill process on port 3000:
+netstat -ano | findstr :3000
+taskkill /PID [PID_NUMBER] /F
+
+# Mac/Linux - Kill process on port 8000:
+lsof -ti:8000 | xargs kill -9
+
+# Mac/Linux - Kill process on port 3000:
+lsof -ti:3000 | xargs kill -9
+Issue 3: Database connection failed
+Bash
+
+# Check PostgreSQL is running
+# Windows:
+net start postgresql-x64-15  # or check Services
+
+# Mac:
+brew services list
+
+# Linux:
+sudo systemctl status postgresql
+
+# Verify connection:
+psql -U mlresearch -d mlresearch -h localhost
+# Password: mlresearch123
+Issue 4: API Key errors
+Check .env file has correct keys
+Make sure no extra spaces or quotes around keys
+Verify keys are active on respective platforms
+Try regenerating keys if needed
+Issue 5: Redis connection error
+Bash
+
+# Check Redis is running
+redis-cli ping
+
+# If not running:
+# Windows: Start redis-server.exe
+# Mac: brew services start redis
+# Linux: sudo systemctl start redis
+📱 USING THE APPLICATION
+1. First Time Setup
+Open http://localhost:3000
+The application should load with the main interface
+2. Testing AI Agents
+Click "Agent Testing" tab
+Select Agent: Choose "Google Gemini" or "Groq"
+Select Task: Choose from available tasks
+Enter Parameters:
+For "Idea Generation": Enter a topic like "transformer models"
+For "Proposal Writing": Enter a research idea
+Click "Execute Task"
+Wait for results (may take 10-30 seconds)
+3. Running Experiments
+Click "Experiments" tab
+Click "New Experiment"
+Fill in:
+Name: "Test Experiment 1"
+Description: "Testing NLP agents"
+Domain: Select "Natural Language Processing"
+Select agents and tasks
+Click "Create Experiment"
+Click "Run" on the created experiment
+4. Viewing Metrics
+Click "Metrics" tab
+View performance charts
+Filter by agent or task type
+🛑 STOPPING THE APPLICATION
+Manual Run:
+Backend: Press Ctrl+C in the backend terminal
+Frontend: Press Ctrl+C in the frontend terminal
+Docker:
+Bash
+
+docker-compose down
+
+# To remove all data:
+docker-compose down -v
+📝 QUICK REFERENCE COMMANDS
+Bash
+
+# Start Backend
+cd backend && venv\Scripts\activate && python -m uvicorn app.main:app --reload
+
+# Start Frontend  
+cd frontend && npm run dev
+
+# Check logs
+# Backend logs: Check terminal running uvicorn
+# Frontend logs: Check terminal running npm
+
+# Reset everything
+docker-compose down -v
+rm -rf backend/venv frontend/node_modules
+# Then reinstall from Step 4
+✨ SUCCESS INDICATORS
+You know everything is working when:
+
+✅ Backend API responds at http://localhost:8000
+✅ API Documentation visible at http://localhost:8000/docs
+✅ Frontend loads at http://localhost:3000
+✅ No red errors in browser console (F12 to check)
+✅ Agent dropdown shows "Google Gemini" and "Groq"
+✅ Task dropdown shows multiple task options
+✅ Can execute a test task and get results
+📞 GETTING HELP
+If you encounter issues:
+
+Check the terminal/console for error messages
+Verify all prerequisites are installed correctly
+Make sure all services are running
+Check that API keys are correctly set
+Try restarting all services
+Clear browser cache and reload
+🎉 CONGRATULATIONS!
+Your ML Research Agent Testing Platform is now running!
+
+Start exploring:
+
+Test different AI agents
+Compare their performance
+Run batch experiments
+Analyze metrics
+Happy Testing! 🚀
