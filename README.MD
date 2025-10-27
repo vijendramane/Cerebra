@@ -98,7 +98,7 @@ API (REST/WebSocket)
 ### Optional
 - **Docker & Docker Compose** (for containerized setup)
 
-## 🛠️ Installation
+## 🛠️ Installation  
 
 ### Step 1: Clone the Repository
 
