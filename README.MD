@@ -16,7 +16,7 @@ A comprehensive fullstack platform for testing and evaluating ML research AI age
 - [Configuration](#-configuration)
 - [Usage](#-usage)
 - [API Documentation](#-api-documentation)
-- [Troubleshooting](#-troubleshooting)
+- [Troubleshooting](#-troubleshooting) 
 - [Contributing](#-contributing)
 
 ## ✨ Features
