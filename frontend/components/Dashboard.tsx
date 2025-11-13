@@ -7,7 +7,7 @@ import { Activity, Brain, FlaskConical, TrendingUp } from 'lucide-react';
 import api from '@/lib/api';
 
 export default function Dashboard() {
-  const { data: metrics, isLoading } = useQuery({  
+  const { data: metrics, isLoading } = useQuery({   
     queryKey: ['dashboard-metrics'],  
     queryFn: () => api.get('/metrics/dashboard').then(res => res.data),
   });
