@@ -12,7 +12,7 @@ export default function Dashboard() {
     queryFn: () => api.get('/metrics/dashboard').then(res => res.data),
   });
 
-  if (isLoading) {
+  if (isLoading) { 
     return <div>Loading dashboard...</div>;
   }
 
