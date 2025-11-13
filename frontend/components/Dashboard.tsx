@@ -8,7 +8,7 @@ import api from '@/lib/api';
 
 export default function Dashboard() {
   const { data: metrics, isLoading } = useQuery({  
-    queryKey: ['dashboard-metrics'],
+    queryKey: ['dashboard-metrics'], 
     queryFn: () => api.get('/metrics/dashboard').then(res => res.data),
   });
 
