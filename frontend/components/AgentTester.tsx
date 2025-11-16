@@ -12,7 +12,7 @@ import api from '@/lib/api';
  
 interface Agent {
   id: string;
-  name: string;
+  name: string; 
   description: string;
   capabilities: string[];
 }
