@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { Activity, Brain, FlaskConical, TrendingUp } from 'lucide-react';
 import api from '@/lib/api';
-
+ 
 export default function Dashboard() {
   const { data: metrics, isLoading } = useQuery({   
     queryKey: ['dashboard-metrics'],  
