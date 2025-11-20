@@ -75,7 +75,7 @@ export default function AgentTester() {
                 className="mt-1"
               />
             </div>
-          </div>
+          </div> 
         );
       case 'proposal_writing':
         return (
