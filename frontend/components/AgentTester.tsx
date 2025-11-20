@@ -10,7 +10,7 @@ import { Label } from '@/components/ui/label';
 import { Loader2, Send, Bot } from 'lucide-react';
 import api from '@/lib/api';
 
-interface Agent { 
+interface Agent {
   id: string;
   name: string; 
   description: string;
