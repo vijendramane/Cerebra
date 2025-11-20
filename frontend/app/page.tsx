@@ -9,7 +9,7 @@ export default function Home() {
   const [metrics, setMetrics] = useState<any>(null);
   const [loading, setLoading] = useState(false);
 
-  // Fetch initial data
+  // Fetch initial data 
   useEffect(() => {
     fetchResults();
     fetchAgents();
