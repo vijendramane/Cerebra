@@ -9,7 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Loader2, Send, Bot } from 'lucide-react';
 import api from '@/lib/api';
- 
+
 interface Agent {
   id: string;
   name: string; 
