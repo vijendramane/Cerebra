@@ -5,21 +5,6 @@
 
 # load_dotenv()
 
-# class SimpleAI:
-#     def __init__(self):
-#         self.api_key = os.getenv("GOOGLE_API_KEY")
-#         if self.api_key:
-#             genai.configure(api_key=self.api_key)
-#             self.model = genai.GenerativeModel('gemini-pro')
-#         else:
-#             self.model = None
-    
-#     def generate_text(self, prompt: str) -> str:
-#         if not self.model:
-#             return "Please configure your Google API key in .env file"
-        
-
-
 from huggingface_hub import InferenceClient
 
 # Your API Key
