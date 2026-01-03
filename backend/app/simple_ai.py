@@ -1,5 +1,3 @@
-
-
 from huggingface_hub import InferenceClient
 
 # Your API Key
