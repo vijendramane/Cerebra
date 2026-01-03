@@ -18,18 +18,6 @@
 #         if not self.model:
 #             return "Please configure your Google API key in .env file"
         
-#         try:
-#             response = self.model.generate_content(prompt)
-#             return response.text
-#         except Exception as e:
-#             return f"Error generating response: {str(e)}"
-
-# # Test function
-# if __name__ == "__main__":
-#     ai = SimpleAI()
-#     result = ai.generate_text("Write a haiku about Python programming")
-#     print(result)
-
 
 
 from huggingface_hub import InferenceClient
