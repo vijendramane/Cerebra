@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     fetchResults();
     fetchAgents();
-    fetchMetrics();
+    fetchMetrics(); 
   }, []);
 
   const fetchResults = async () => {
