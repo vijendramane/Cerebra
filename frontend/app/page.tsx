@@ -8,7 +8,7 @@ export default function Home() {
   const [agents, setAgents] = useState<any[]>([]);
   const [metrics, setMetrics] = useState<any>(null);
   const [loading, setLoading] = useState(false);
-
+ 
   // Fetch initial data 
   useEffect(() => {
     fetchResults();
