@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   const fetchResults = async () => {
-    try {
+    try { 
       const response = await fetch('http://localhost:8000/api/results');
       const data = await response.json();
       setTestResults(data.results || []);
