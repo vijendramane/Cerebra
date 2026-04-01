@@ -71,7 +71,7 @@ export default function Home() {
     logo: {
       fontSize: '1.5rem',
       fontWeight: '700',
-      color: '#0f172a'
+      color: '#0f172a' 
     },
     nav: {
       display: 'flex',
