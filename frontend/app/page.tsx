@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Home() {
-  const [activeView, setActiveView] = useState('test');
+  const [activeView, setActiveView] = useState('test'); 
   const [testResults, setTestResults] = useState<any[]>([]);
   const [agents, setAgents] = useState<any[]>([]);
   const [metrics, setMetrics] = useState<any>(null);
