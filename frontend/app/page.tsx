@@ -6,7 +6,7 @@ export default function Home() {
   const [activeView, setActiveView] = useState('test'); 
   const [testResults, setTestResults] = useState<any[]>([]);
   const [agents, setAgents] = useState<any[]>([]);
-  const [metrics, setMetrics] = useState<any>(null); 
+  const [metrics, setMetrics] = useState<any>(null);  
   const [loading, setLoading] = useState(false);
  
   // Fetch initial data 
