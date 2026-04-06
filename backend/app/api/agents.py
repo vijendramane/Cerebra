@@ -14,7 +14,7 @@ from sqlalchemy.orm import Session
 router = APIRouter()
 
 class AgentTaskRequest(BaseModel):
-    agent_type: str  # gemini, groq
+    agent_type: str  # gemini, groq 
     task_type: str  # idea_generation, proposal_writing, etc.
     parameters: Dict[str, Any]
     
