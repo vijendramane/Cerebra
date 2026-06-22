@@ -7,7 +7,7 @@ A comprehensive fullstack platform for testing and evaluating ML research AI age
 ![Next.js](https://img.shields.io/badge/Next.js-14.0-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
  
-## 📌 Table of Contents
+## 📌 Table of Contents for Agent
  
 - [Features](#-features)
 - [Architecture](#-architecture)
