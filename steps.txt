@@ -4,7 +4,7 @@ Terminal 1 - Start Backend:
 Bash
 
 # Open new terminal/command prompt
-cd ml-research-agent-platform
+cd ml-research-agent-platform 
 cd backend
 
 # Activate virtual environment
