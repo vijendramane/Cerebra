@@ -1,7 +1,7 @@
 🏃 RUNNING THE APPLICATION
 Method 1: Manual Run (Recommended for Development)
 Terminal 1 - Start Backend:
-Bash
+Bash 
 
 # Open new terminal/command prompt 
 cd ml-research-agent-platform 
