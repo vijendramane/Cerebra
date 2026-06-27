@@ -3,7 +3,7 @@ Method 1: Manual Run (Recommended for Development)
 Terminal 1 - Start Backend:
 Bash
 
-# Open new terminal/command prompt
+# Open new terminal/command prompt 
 cd ml-research-agent-platform 
 cd backend
 
