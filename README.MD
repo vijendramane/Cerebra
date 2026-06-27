@@ -87,7 +87,7 @@ API (REST/WebSocket)
 
 
 ## 📋 Prerequisites
-
+some 
 ### Required Software
 - **Python 3.9+** (3.9, 3.10, or 3.11 recommended)
 - **Node.js 18+** and npm
