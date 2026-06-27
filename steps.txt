@@ -8,7 +8,7 @@ cd ml-research-agent-platform
 cd backend
 
 # Activate virtual environment
-# Windows:
+# Windows: 
 venv\Scripts\activate
 
 # Mac/Linux:
