@@ -107,6 +107,7 @@ git clone <your-repository-url>
 cd ml-research-agent-platform
 
 
-
+### Publication
+Research paper on this project are published in IEEE (march-2026)
 
 
