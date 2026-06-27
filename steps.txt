@@ -1,4 +1,4 @@
-🏃 RUNNING THE APPLICATION
+ 🏃 RUNNING THE APPLICATION
 Method 1: Manual Run (Recommended for Development)
 Terminal 1 - Start Backend:
 Bash 
