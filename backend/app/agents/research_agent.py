@@ -1,7 +1,7 @@
 from typing import Dict, List, Any, Optional
 from langchain.agents import Tool, AgentExecutor, create_react_agent
 from langchain.memory import ConversationBufferMemory
-from langchain.prompts import PromptTemplate
+from langchain.prompts import PromptTemplateS
 from langchain_google_genai import ChatGoogleGenerativeAI
 from groq import Groq
 import json
